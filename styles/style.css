@@ -16,10 +16,6 @@ body{
 }
 
 #container{
-	width: 50%;
-	margin: auto;
-}
-#form{
 	margin: auto;
 }
 
@@ -31,50 +27,12 @@ h2{
 	padding-bottom: 13%;
 	font-weight: 700;
 }
-dt{
-	font-weight: bold;
-}
-#folders{
-	margin-right:4%;
-}
 
 .btn{
 	box-shadow: none;
+	height: 3rem;	
 }
 
 .btn:hover{
 	box-shadow: none;	
-}
-
-.file-field .btn{
-	float: none;
-}
-
-.file-field .file-path-wrapper{
-	padding-left:0;
-}
-
-.file-field .file-path{
-	text-align: center;
-}
-
-.add-margin{
-	margin-top:2em;
-	margin-bottom:2em;
-	height: 3rem;
-	line-height: 3rem;
-}
-
-.command{
-	text-transform: none;
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 400;
-}
-
-.info{
-	margin: 2%;
-	text-transform: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	text-align: left;
 }
