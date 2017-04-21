@@ -2,49 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Import Google Icon Font-->
+    <!--Import Google Icon Font (needed for the google icons to be displayed-code button)-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
        <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
       <title>Downloading Files</title>
 </head>
 <body>
 
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="#" class=" grey-text text-lighten-1 brand-logo">Downloading Files</a>
+      <ul id="nav-mobile" class="right">
+          <a id='info' class=" modal-trigger waves-effect waves-light add-margin" type="button" href="#modal2"><i class="small material-icons grey-text text-lighten-1">info_outline</i></a>
+             <!-- Modal Structure -->
+            <div id="modal2" class="modal modal-fixed-footer">
+              <div class="modal-content grey-text text-darken-3" style='line-height: 1.8em;'>
+                <br><h4 class= "grey-text text-darken-4">How to use this tool</h4>
+                <dl class="info grey-text text-darken-2"><br><dt>Submit the form</dt><dd>Go to your main assets folder containing all sizes folders and copy and paste the folders paths (by clicking on the specific checkbox) in the correct field. You don't need to fill all the fields.</dd><br><dt></dt><dd>Download the Dynamic Paths .csv file with all sizes' checkboxs you need checked (note that the .csv file should match with the folder paths fileds you fill), and upload it on the upload button (or just drag it).</dd><br><dt>Download the files</dt><dd>Press Download and all the files will be downloaded.</dd><br><dt>Organize the files</dt><dd>Copy the command will appear and paste it in your terminal in your  <span class="">  ~/Downloads </span> folder. This will sort the files into the correct folders.</dd><br><dt>Your assets are ready now to start work.</dt><dd>Note: If you don't delete the .csv file from your Downloads before execute the command, this will generate an extra folder called "https/.</dl>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Got it</a>
+              </div>
+            </div>
+      </ul>
+    </div>
+  </nav>
+
 <div id = "cont" class = "valign-wrapper">
-<div id = "container" class = "valign">
-  <h2 ><span class = ' grey-text text-lighten-1'>Download Files</span></h2>
+<div id = "container" class = "">
   <form id="form" onsubmit="">
-    <div class="input-field file-field">
-      <div class="btn">
-        <span>File</span>
-        <input type="file" id="fileCSV" >
+    <div class="row valign-wrapper">
+      <div id='folders' class="col s8">
+            <div class="input-field ">
+              <input id="path-120x600" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-120x600" class="active">120x600</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-160x600" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-160x600" class="active">160x600</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-300x250" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-300x250" class="active">300x250</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-300x50" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-300x50" class="active">300x50</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-300x600" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-300x600" class="active">300x600</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-320x50" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-320x50" class="active">320x50</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-468x60" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-468x60" class="active">468x60</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-728x90" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-728x90" class="active">728x90</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-970x250" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-970x250" class="active">970x250</label>
+            </div>
+            <div class="input-field ">
+              <input id="path-DATA" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
+              <label for="path-DATA" class="active">DATA</label>
+            </div>
       </div>
-      <div class="file-path-wrapper">
-        <input id="file-path" class="file-path validate" type="text">
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="folder-path" type="text" value="" placeholder="https://s0.2mdn.net/creatives/assets/1954024/">
-          <label for="folder-path" class="active">Folder Base Path</label>
-        </div>
+
+      <div id="scnd-col" class="col s4">
+          <div class="input-field file-field">
+            <div class="btn upload">
+              <span>Upload</span>
+              <input type="file" id="fileCSV" class="file">
+            </div>
+            <div class="file-path-wrapper" style="display: inline-block">
+              <input id="file-path" class="file-path validate file" type="text">
+            </div>
+          </div>
+          <div >
+            <button class="btn add-margin" type="button" onclick="download()">Download</button>
+          </div>
+            <!-- Modal Trigger -->
+            <a id='code' class="modal-trigger waves-effect waves-light add-margin" type="button" href="#modal1"><i class="medium material-icons grey-text">code</i></a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Paste this command in your terminal</h4>
+                <p class="command">No code generated yet</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Got it</a>
+              </div>
+            </div>            
       </div>
     </div>
   </form>
-  
-  
-<div >
-  <button class="btn" type="button" onclick="download()">Download</button>
-</div>
 </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<!--Compiled and minified materialize.js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 <script type = "text/javascript" src= "js/script.js"></script>
 
