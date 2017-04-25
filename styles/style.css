@@ -113,6 +113,11 @@ dt{
 	box-shadow: none;	
 }
 
+.btn-floating i {
+	line-height: inherit;
+}
+
+
 .upload{
 	display: block;
 	margin: auto;
