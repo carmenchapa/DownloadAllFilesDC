@@ -46,6 +46,10 @@ nav{
 	font-weight: 500;
 }
 
+nav ul a:hover {
+   background-color: rgba(0,0,0,0);
+}
+
 .nav-wrapper{
 	border-bottom:1px solid #bdbdbd;
 }
