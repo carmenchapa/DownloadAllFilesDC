@@ -116,7 +116,9 @@ dt{
 .btn-floating i {
 	line-height: inherit;
 }
-
+.btn-floating{
+	box-shadow: none;
+}
 
 .upload{
 	display: block;
