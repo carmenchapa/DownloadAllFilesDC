@@ -120,6 +120,10 @@ dt{
 	box-shadow: none;
 }
 
+.btn-floating:hover{
+	box-shadow: none;
+}
+
 .upload{
 	display: block;
 	margin: auto;
