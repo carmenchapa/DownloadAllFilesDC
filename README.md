@@ -1,7 +1,7 @@
 https://carmenchapa.github.io/DownloadAllFilesDC/
 
 # DownloadAllFilesDC
-This site is a tool that allow users to download assets from Google DoubleClickStudio platform.
+This site is a tool that allow users to download assets from Google [DoubleClickStudio](https://www.doubleclickbygoogle.com) platform.
 
 ## How to use it
 Once in the [site](https://carmenchapa.github.io/DownloadAllFilesDC/)
